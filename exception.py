@@ -1,23 +1,23 @@
-#error and exceptions
-# x= -5
-# if x<0:
-#     raise Exception('x should be positive')
-# else:
-#     print(x)
+# error and exceptions
+x= -5
+if x<0:
+    raise Exception('x should be positive')
+else:
+    print(x)
 
-# assert (x>=0), 'X is not positive'
+assert (x>=0), 'X is not positive'
 
-# try:
-#     a=5/0
-#     b = a+ 10
-# except ZeroDivisionError as e:
-#     print(e)
-# except TypeError as e:
-#     print(e)
-# else:
-#     print('Everything is fine')
-# finally:
-#     print('Cleaning up...')
+try:
+    a=5/0
+    b = a+ 10
+except ZeroDivisionError as e:
+    print(e)
+except TypeError as e:
+    print(e)
+else:
+    print('Everything is fine')
+finally:
+    print('Cleaning up...')
 
 class ValueTooHighError(Exception):
     pass
