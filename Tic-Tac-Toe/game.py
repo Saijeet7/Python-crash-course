@@ -104,8 +104,9 @@ def play(game, x_player, o_player, print_game=True):
         print('It\'s a tie!!')
 
 if __name__ == '__main__':
-    x_player = RandomComputerPlayer('X')
+    x_player = HumanPlayer('X')
     o_player = GeniusComputerPlayer('O')
     t = TicTacToe()
-    play(t, x_player, o_player, print_game=True)
+    result = play(t, x_player, o_player, print_game=True)
+        
         
