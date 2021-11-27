@@ -1,7 +1,7 @@
 import os
 import time
 
-mins = int(input("Set Timer in minutes:"))
+mins = int(input("Set Timer in minutes : "))
 t = mins*60
 while t:
     mins = t//60
@@ -13,5 +13,5 @@ while t:
 
 print("Now it shuts down")
 
-# #Shut Down
-# os.system('shutdown -s')
+#Shut Down
+os.system('shutdown -s')
